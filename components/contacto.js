@@ -15,9 +15,9 @@ export default function Contacto() {
           <a
             href='https://www.instagram.com/apollosportguatire/'
             target='_blank'
-            className='uppercase text-sm md:text-base bg-slate-800 hover:bg-rose-700 duration-300 ease-in-out px-4 py-2.5 font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800'
+            className='w-full uppercase text-xs md:text-base bg-slate-800 hover:bg-rose-700 duration-300 ease-in-out px-2 py-2 font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800'
           >
-            Haz click aqui apra comunicarte con nosotros!
+            Haz click, comunicate con nosotros!
           </a>
         </div>
       </div>

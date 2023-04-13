@@ -2,9 +2,9 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 const links = [
-  { link: 'nosotros', url: '#nosotros' },
-  { link: 'Deportes', url: '#deporte' },
-  { link: 'contactanos', url: '#contacto' },
+  { id: 1, link: 'nosotros', url: '#nosotros' },
+  { id: 2, link: 'Deportes', url: '#deporte' },
+  { id: 3, link: 'contactanos', url: '#contacto' },
 ]
 
 export default function header() {
@@ -71,9 +71,9 @@ export default function header() {
               xmlns='http://www.w3.org/2000/svg'
             >
               <path
-                fill-rule='evenodd'
+                fillRule='evenodd'
                 d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
-                clip-rule='evenodd'
+                clipRule='evenodd'
               ></path>
             </svg>
           </button>
@@ -86,7 +86,7 @@ export default function header() {
         >
           <ul className='flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
             {links.map((link) => (
-              <li>
+              <li key={link.id}>
                 <a
                   href={link.url}
                   className='capitalize block border-b md:border-none py-2 px-2 rounded hover:bg-gray-800  md:hover:text-rose-500 font-bold  mb-3 md:mb-0'
