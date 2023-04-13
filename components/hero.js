@@ -54,7 +54,8 @@ export default function Hero() {
             height={100}
             src='/img/hero-img.jpg'
             className='object-cover rounded-full'
-            alt='mockup'
+            alt='imagen logo del hero'
+            priority={true}
           />
         </div>
       </div>
